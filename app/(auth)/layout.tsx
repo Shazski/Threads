@@ -1,19 +1,17 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
+import '../globals.css'
 
 export const metadata = {
   title: "Threads",
   description: "A Nextjs meta threads application"
 };
 
-import { useRouter } from "next/router";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 
-  const router = useRouter();
   return (
     <ClerkProvider>
       <html lang="en">
@@ -21,6 +19,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </body>
       </html>
-    </ClerkProvider>
+     </ClerkProvider>
   );
 }

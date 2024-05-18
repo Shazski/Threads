@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Threads",
-  description: "Threads clone",
+  description: "Threads app using nextjs ",
 };
 
 export default function RootLayout({
